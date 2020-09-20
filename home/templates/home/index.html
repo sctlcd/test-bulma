@@ -1,10 +1,24 @@
 {% extends "base.html" %}
 {% load static %}
 
+{% block page_header %}
+<section class="section">
+  <div class="container header-container">
+  </div>
+</section>
+{% endblock %}
+
 {% block content %}
-  <h1 class="title is-1 green">Youpi it works!</h1>
-  <div class="buttons">
-       <a class="button is-primary">Primary</a>
-       <a class="button is-link">Link</a>
-     </div>
+<section class="section">
+  <div class="container">
+    <h1 class="title">The new collections are there</h1>
+  </div>
+  <div>
+    <h4>
+      <a href="" class=""></a>
+      <button class="button is-black is-large is-uppercase">Shop now</button>
+    </h4>
+  </div>
+</section>
+
 {% endblock %}
