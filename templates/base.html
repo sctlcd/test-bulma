@@ -42,16 +42,16 @@
 
 <body>
   <header class="container is-fluid is-fixed-top">
-    <div class="columns">
+    <div class="columns my-0">
       <div class="column py-1 py-0-desktop has-text-centered has-text-left-desktop">
-        <a href="{% url 'home' %}" class="navbar-link main-logo-link">
+        <a href="{% url 'home' %}" class="navbar-link is-arrowless main-logo-link">
           <h2 class="logo-font has-text-black my-0"><strong>Boutique</strong> Ado</h2>
         </a>
       </div>
       <div class="column py-1 py-0-desktop">
         <form method="GET" action="">
-          <div class="field is-fullwidth has-addons">
-            <div class="control">
+          <div class="field has-addons">
+            <div class="control is-expanded">
               <input class="input" type="text" name="q" placeholder="Search our site">
             </div>
             <div class="control">
@@ -67,10 +67,10 @@
       </div>
       <div class="column py-1 py-0-desktop">
         <div class="content">
-          <ul class="is-inline has-text-centered has-text-right-desktop my-0">
-            <li class="is-inline dropdown">
+          <ul class="has-text-centered has-text-right-desktop my-0">
+            <li class="dropdown" style="display:inline-block">
               <div class="dropdown-trigger">
-                <a class="has-text-black navbar-link" href="#" id="user-options" aria-haspopup="true" aria-expanded="false" aria-controls="dropdown-user-options">
+                <a class="has-text-black navbar-link is-arrowless" href="#" id="user-options" aria-haspopup="true" aria-expanded="false" aria-controls="dropdown-user-options">
                   <div class="text-center">
                     <div><i class="fas fa-user fa-lg"></i></div>
                     <p class="my-0">My Account</p>
@@ -93,8 +93,8 @@
                 </div>
               </div>
             </li>
-            <li class="is-inline">
-              <a class="{% if grand_total %}has-text-primary has-text-weight-bold{% else %}has-text-black{% endif %} navbar-link" href="">
+            <li style="display:inline-block">
+              <a class="{% if grand_total %}has-text-primary has-text-weight-bold{% else %}has-text-black{% endif %} navbar-link is-arrowless" href="">
                 <div class="has-text-centered">
                   <div><i class="fas fa-shopping-bag fa-lg"></i></div>
                   <p class="my-0">
