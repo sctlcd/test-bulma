@@ -20,6 +20,8 @@
   <!-- Bootstrap CSS -->
   <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"> -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'css/base.css' %}">
   {% endblock %}
 
   {% block extra_css %}
@@ -41,21 +43,20 @@
 </head>
 
 <body>
-  <header class="container is-fluid is-fixed-top">
+  <header class="container is-fluid">
     <div class="columns my-0">
-      <div class="column py-1 py-0-desktop has-text-centered has-text-left-desktop">
+      <div class="column py-5 has-text-centered has-text-left-desktop">
         <a href="{% url 'home' %}" class="navbar-link is-arrowless main-logo-link">
           <h2 class="logo-font has-text-black my-0"><strong>Boutique</strong> Ado</h2>
         </a>
       </div>
-      <div class="column py-1 py-0-desktop">
+      <div class="column py-5">
         <form method="GET" action="">
           <div class="field has-addons">
             <div class="control is-expanded">
               <input class="input" type="text" name="q" placeholder="Search our site">
             </div>
             <div class="control">
-              <!-- <button class="button is-dark">Dark</button> -->
               <a class="button is-dark">
                 <span class="icon">
                   <i class="fas fa-search"></i>
@@ -65,11 +66,11 @@
           </div>
         </form>
       </div>
-      <div class="column py-1 py-0-desktop">
+      <div class="column py-2">
         <div class="content">
           <ul class="has-text-centered has-text-right-desktop my-0">
             <li class="dropdown" style="display:inline-block">
-              <div class="dropdown-trigger">
+              <div class="dropdown-trigger my-1">
                 <a class="has-text-black navbar-link is-arrowless" href="#" id="user-options" aria-haspopup="true" aria-expanded="false" aria-controls="dropdown-user-options">
                   <div class="text-center">
                     <div><i class="fas fa-user fa-lg"></i></div>
@@ -113,19 +114,21 @@
     </div>
   </header>
 
-  {% if messages %}
-  <div class="message-container"></div>
-  {% endif %}
+  <div class="content-main">
+    {% if messages %}
+    <div class="message-container"></div>
+    {% endif %}
 
-  {% block page_header %}
-  {% endblock %}
+    {% block page_header %}
+    {% endblock %}
 
-  {% block content %}
-  {% endblock %}
 
-  {% block postloadjs %}
-  {% endblock %}
+    {% block content %}
+    {% endblock %}
 
+    {% block postloadjs %}
+    {% endblock %}
+  </div>
 </body>
 
 </html>

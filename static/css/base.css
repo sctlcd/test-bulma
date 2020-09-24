@@ -3,11 +3,19 @@ html {
 }
 
 body {
-    background: url('/media/homepage_background_cropped.jpg') no-repeat center center fixed;
-    background-size: cover;
-    height: calc(100vh - 164px);
-    color: #555;
+    /* background: url('/media/woman-3040029_1920.jpg') no-repeat center center fixed; */
+    /* background-size: cover; */
+    /* height: calc(100vh - 164px); */
+    /* color: #555; */
     font-family: 'Lato';
+}
+
+.content-main {
+    background: url('/media/homepage-background-1920-min.jpg') no-repeat center center fixed;
+    background-size: cover;
+    /* height: calc(100vh - 164px); */
+    height: 100vh;
+    color: #555;
 }
 
 /* from Bulma */
@@ -59,23 +67,38 @@ body {
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
-@media (min-width: 1200px) {
+@media (min-width: 1216px) {
   .container {
     max-width: 80%;
   }
 }
 
 /* fixed top navbar only on medium and up */
-@media (min-width: 992px) {
-    .fixed-top-desktop-only {
+@media (min-width: 1024px) {
+    /* .fixed-top-desktop-only {
         position: fixed;
         top: 0;
         right: 0;
         left: 0;
         z-index: 1030;
-    }
+    } */
 
     .header-container {
         padding-top: 164px;
+    }
+}
+
+@media (min-width: 769px) {
+    .header-container {
+        padding-top: 164px;
+    }
+}
+@media (max-width: 768px) {
+    .header-container {
+        padding-top: 164px;
+    }
+
+    .content-main {
+        background: url('/media/homepage-background-1280-min.jpg') no-repeat center center fixed;
     }
 }
