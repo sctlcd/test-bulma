@@ -1,0 +1,68 @@
+html {
+    height: 100%;
+}
+
+body {
+    background: url('/media/homepage-background-1920-min.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    color: #555;
+    font-family: 'Lato';
+}
+
+.navbar.is-translucent {
+    background-color: transparent;
+    background-image: none;
+    }
+
+/* from Bulma */
+.icon {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.logo-font {
+    text-transform: uppercase;
+}
+
+.main-logo-link {
+    width: fit-content;
+}
+
+.shop-now-button {
+    min-width: 190px;
+}
+
+/* -------------------------------- Media Queries */
+
+/* Slightly larger container on xl screens */
+@media (min-width: 1216px) {
+  .container {
+    max-width: 80%;
+  }
+}
+
+/* fixed top navbar only on medium and up */
+@media (min-width: 1024px) {
+    .header-container {
+        padding-top: 164px;
+    }
+}
+
+@media (min-width: 769px) {
+    .header-container {
+        padding-top: 164px;
+    }
+}
+@media (max-width: 768px) {
+    .header-container {
+        padding-top: 164px;
+    }
+
+    .content-main {
+        background: url('/media/homepage-background-1280-min.jpg') no-repeat center center fixed;
+    }
+}
