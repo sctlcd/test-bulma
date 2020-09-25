@@ -16,6 +16,12 @@ body {
     background-image: none;
     }
 
+.navbar-menu {
+    /* background-color: #f8f8f8;
+    background-image: none; */
+    /* height: 100vh; */
+}
+
 .content-main {
     /* background: url('/media/homepage-background-1920-min.jpg') no-repeat center center fixed; */
     /* background-size: cover; */
