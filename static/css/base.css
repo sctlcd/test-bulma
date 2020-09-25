@@ -3,18 +3,24 @@ html {
 }
 
 body {
-    /* background: url('/media/woman-3040029_1920.jpg') no-repeat center center fixed; */
-    /* background-size: cover; */
-    /* height: calc(100vh - 164px); */
-    /* color: #555; */
-    font-family: 'Lato';
-}
-
-.content-main {
     background: url('/media/homepage-background-1920-min.jpg') no-repeat center center fixed;
     background-size: cover;
     /* height: calc(100vh - 164px); */
     height: 100vh;
+    color: #555;
+    font-family: 'Lato';
+}
+
+.navbar.is-translucent {
+    background-color: transparent;
+    background-image: none;
+    }
+
+.content-main {
+    /* background: url('/media/homepage-background-1920-min.jpg') no-repeat center center fixed; */
+    /* background-size: cover; */
+    /* height: calc(100vh - 164px); */
+    /* height: 100vh; */
     color: #555;
 }
 
@@ -38,7 +44,7 @@ body {
 .shop-now-button {
     /* background: black;
     color: white; */
-    min-width: 260px;
+    min-width: 190px;
 }
 
 /* .btn-black {
