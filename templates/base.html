@@ -7,9 +7,6 @@
   {% block meta %}
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta charset="utf-8">
-  <!-- From Bootstrap starter template -->
-  <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
-  <!-- From Bulma starter template -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   {% endblock %}
 
@@ -17,8 +14,6 @@
   {% endblock %}
 
   {% block corecss %}
-  <!-- Bootstrap CSS -->
-  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"> -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{% static 'css/base.css' %}">
@@ -28,11 +23,6 @@
   {% endblock %}
 
   {% block corejs %}
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script> -->
   <script src="https://kit.fontawesome.com/e576f39845.js" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" crossorigin="anonymous"></script>
   <script src="static/js/script.js" crossorigin="anonymous"></script>
@@ -60,6 +50,7 @@
         </a>
       </div>
 
+      <!-- navbar-mobile -->
       <div id="navbar-mobile" class="navbar-menu">
         <div class="navbar-end">
           <div class="navbar-item">
@@ -123,6 +114,7 @@
         </div>
       </div>
 
+      <!-- navbar-desktop -->
       <div id="navbar-desktop" class="navbar-menu">
         <div class="navbar-end">
           <div class="navbar-item">
@@ -188,7 +180,6 @@
     </nav>
   </header>
 
-  <!-- <div class="content-main"> -->
   {% if messages %}
   <div class="message-container"></div>
   {% endif %}
@@ -202,7 +193,6 @@
 
   {% block postloadjs %}
   {% endblock %}
-  <!-- </div> -->
 </body>
 
 </html>
