@@ -2,7 +2,7 @@ asgiref==3.2.10
 certifi==2024.7.4
 chardet==3.0.4
 defusedxml==0.6.0
-Django==4.2.30
+Django==5.2.16
 django-allauth==65.14.1
 idna==3.15
 oauthlib==3.1.0
